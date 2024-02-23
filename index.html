@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PHP BRASIL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #41b9ff, #040286);
+    }
+
+    .about-right {
+      max-width: 800px;
+      width: 90%; 
+      margin: 0 auto; 
+      padding: 0 20px; /
+    }
+
+    .image-overlay {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-overlay img {
+      width: 100%; 
+      height: auto; 
+      border-radius: 10px; 
+    margin: auto;
+    }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .text-overlay h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin-top: -50px;
+    }
+
+    .text-overlay p {
+      margin: auto;
+      font-size: 16px;
+    }
+
+    .about-btns {
+      margin-top: 40px; 
+    }
+
+    .btn {
+      border: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 0.55rem 1.5rem;
+      font-weight: 600;
+      background: black;
+      cursor: pointer;
+      color: transparent;
+      width: 100%; 
+      max-width: 300px; 
+    }
+
+    .btn.btn-pink {
+      background: linear-gradient(to right, #41b9ff, #040286);
+      color: #fff;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .btn.btn-pink:hover {
+      background: linear-gradient(to right, #040286, #41b9ff);
+      border-color: #fff;
+      color: #fff;
+    }
+
+    @media screen and (max-width: 768px) {
+      .text-overlay h2 {
+        font-size: 20px; 
+      }
+      
+      .about-btns {
+        margin-top: 20px; 
+      }
+    }
+
+    img {
+      margin-left: -60px;
+      margin-top: -70px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="about-right">
+    <div class="image-overlay">
+      <img src="phpbrasil.jpg">
+      <div class="text-overlay">
+        <h2>Junte-se ao maior grupo da comunidade de PHP Brasileira</h2>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!--Mudar-->
+
+        <div class="about-btns">
+          <button type="button" onclick="redirect()" class="btn btn-pink">Junte-se</button>
+        </div>
+        <p>A comunidade agradece.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://www.facebook.com/groups/phpbr";
+    }
+  </script>
+</body>
+
+</html>
